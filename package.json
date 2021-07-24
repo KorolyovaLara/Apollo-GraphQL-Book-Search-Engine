@@ -1,0 +1,29 @@
+{
+  "name": "apollo-graphql-book-search-engine",
+  "version": "1.0.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "author": "Larysa Korolyova",
+  "description": "",
+  "license": "MIT",
+  "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KorolyovaLara/Apollo-GraphQL-Book-Search-Engine"
+  },
+  "scripts": {
+    "install": "cd server && npm i && cd ../client && npm i",
+
+    "start": "node server/server.js",
+
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "apollo-server-express": "^3.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "6.2.0"
+  }
+}
