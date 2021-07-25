@@ -1,23 +1,22 @@
 {
   "name": "apollo-graphql-book-search-engine",
   "version": "1.0.0",
-  "lockfileVersion": 2,
-  "requires": true,
-  "author": "Larysa Korolyova",
-  "description": "",
-  "license": "MIT",
+  "description": "Refactor of a REST API Book Search website to an Apollo Server version with use of GraphQL.",
   "main": "server/server.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/KorolyovaLara/Apollo-GraphQL-Book-Search-Engine"
-  },
   "scripts": {
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KorolyovaLara/Apollo-GraphQL-Book-Search-Engine"
+  },
+  "keywords": [],
+  "author": "Larysa Korolyova",
+  "license": "MIT",
   "devDependencies": {
-    "concurrently": "6.2.0"
+    "concurrently": "^5.1.0"
   }
 }
